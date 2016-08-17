@@ -92,7 +92,6 @@ def get_msg():
 					result_url = urlbase + url_for('pic', MediaId=MediaId)
 					msg = '你的专属海报已经生成好啦，请访问以下链接查看和保存： ' + result_url
 					xml = xml_msg(FromUserName, msg, me)
-					print(xml)
 					return xml
 				else:
 					msg = '不好意思，目前仅支持横版的照片，请换一张试试呢！'
